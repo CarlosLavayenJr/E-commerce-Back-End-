@@ -3,6 +3,8 @@ const Product = require('./Product');
 const Category = require('./Category');
 const Tag = require('./Tag');
 const ProductTag = require('./ProductTag');
+const Sequelize = require('sequelize');
+const dotenv = require('dotenv');
 
 // Products belongsTo Category
 Product.belongsTo(Category, {
